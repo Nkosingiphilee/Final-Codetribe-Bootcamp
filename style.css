@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("images/favicon-32x32.png");
+}
+.container {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #333;
+    padding: 20px;
+}
+.container div {
+    padding: 20px;
+}
+.green {
+    background-color: #2caeba;
+    color: white;
+}
+.button {
+    display: inline-block;
+    background-color: #2caeba;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
